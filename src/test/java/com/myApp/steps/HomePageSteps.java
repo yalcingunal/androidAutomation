@@ -12,12 +12,12 @@ public class HomePageSteps {
     }
 
     @Given("^Visitor is on the Application Home$")
-    public void visitorIsOnTheApplicationHome() throws Throwable {
+    public void visitorIsOnTheApplicationHome() {
         homePageBase.closeAdvertisement();
     }
 
     @And("^User goes to Football Bet list$")
-    public void userGoesToFootballBetList() throws Throwable {
+    public void userGoesToFootballBetList() {
         homePageBase.goToFootballBetList();
     }
 

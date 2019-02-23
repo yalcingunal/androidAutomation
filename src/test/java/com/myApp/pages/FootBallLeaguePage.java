@@ -4,7 +4,6 @@ import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-import java.net.MalformedURLException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,7 +16,7 @@ public class FootBallLeaguePage extends PageBase {
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/top_button")
     private AndroidElement filterOkButton;
 
-    public FootBallLeaguePage() throws MalformedURLException {
+    public FootBallLeaguePage() {
     }
 
     public void chooseLeagueByIndex(int value) {

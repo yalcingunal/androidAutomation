@@ -19,22 +19,22 @@ public class BetListSteps {
     }
 
     @And("^User goes to Filter$")
-    public void userGoesToFilter() throws Throwable {
+    public void userGoesToFilter() {
         betListPage.openFilter();
     }
 
     @Then("^User should see matches the number of selected league$")
-    public void userShouldSeeMatchesTheNumberOfSelectedLeague() throws Throwable {
-        Assert.assertEquals("Wrong match count",matchCount,betListPage.getTotalMatchCount());
+    public void userShouldSeeMatchesTheNumberOfSelectedLeague() {
+        Assert.assertEquals("Wrong match count", matchCount, betListPage.getTotalMatchCount());
     }
 
     @When("^User adds first (\\d+) match to bet list$")
-    public void userAddsFirstMatchToBetList(int matchCount) throws Throwable {
+    public void userAddsFirstMatchToBetList(int matchCount) {
         betListPage.addBetListWithIndex(matchCount);
     }
 
     @And("^User selects (\\d+) th League$")
-    public void userSelectsThLeague(int index) throws Throwable {
+    public void userSelectsThLeague(int index) {
         matchCount = footBallLeaguePage.getMatchCountByIndex(index);
         footBallLeaguePage.chooseLeagueByIndex(index);
         footBallLeaguePage.applyFilter();

@@ -4,9 +4,7 @@ import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-import java.net.MalformedURLException;
-
-public class LoginPage  extends PageBase {
+public class LoginPage extends PageBase {
 
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/username_edit")
     private AndroidElement usernameTextBox;
@@ -17,7 +15,7 @@ public class LoginPage  extends PageBase {
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/login_btn")
     private AndroidElement loginButton;
 
-    public LoginPage() throws MalformedURLException {
+    public LoginPage() {
     }
 
     public void loginWithUsernameAndPassword(String username, String password) {

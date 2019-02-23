@@ -5,8 +5,6 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.NoSuchElementException;
 
-import java.net.MalformedURLException;
-
 public class HomePageBase extends PageBase {
 
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/close_btn")
@@ -24,7 +22,7 @@ public class HomePageBase extends PageBase {
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/background_view")
     private AndroidElement betCheckoutListButton;
 
-    public HomePageBase() throws MalformedURLException {
+    public HomePageBase() {
     }
 
     public void closeAdvertisement() {
@@ -43,6 +41,7 @@ public class HomePageBase extends PageBase {
     public void goToBetCheckoutList() {
         betCheckoutListButton.click();
     }
+
     public void goToLogin() {
         loginButton.click();
     }

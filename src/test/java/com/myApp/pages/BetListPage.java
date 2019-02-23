@@ -5,8 +5,6 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.NoSuchElementException;
 
-
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +28,7 @@ public class BetListPage extends PageBase {
 
     public List<String> idList = new ArrayList<>();
 
-    public BetListPage() throws MalformedURLException {
+    public BetListPage() {
     }
 
     public void openFilter() {

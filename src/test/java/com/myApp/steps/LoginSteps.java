@@ -15,8 +15,8 @@ public class LoginSteps {
         this.homePageBase = homePageBase;
     }
 
-    @And("^Visitor logs in to Application with \"([^\"]*)\" usename and \"([^\"]*)\" password$")
-    public void visitorLogsInToApplicationWithUsenameAndPassword(String username, String password) throws Throwable {
+    @And("^Visitor logs in to Application with \"([^\"]*)\" username and \"([^\"]*)\" password$")
+    public void visitorLogsInToApplicationWithUsernameAndPassword(String username, String password) {
         homePageBase.goToLogin();
         loginPage.loginWithUsernameAndPassword(username, password);
     }

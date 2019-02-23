@@ -17,13 +17,13 @@ public class BetCheckoutSteps {
     }
 
     @And("^User goes to bet checkout list$")
-    public void userGoesToBetCheckoutList() throws Throwable {
+    public void userGoesToBetCheckoutList() {
         homePageBase.goToBetCheckoutList();
         betCheckOutListPage.playBet();
     }
 
     @Then("^User should see \"([^\"]*)\" warning message$")
-    public void userShouldSeeWarningMessage(String warningMessage) throws Throwable {
+    public void userShouldSeeWarningMessage(String warningMessage) {
         Assert.assertEquals("There is no warning message", warningMessage, betCheckOutListPage.getCheckoutMessage());
     }
 }

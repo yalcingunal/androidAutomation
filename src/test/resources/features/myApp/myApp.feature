@@ -3,7 +3,7 @@ Feature: Match list and minimum bet price
   @minimum_bet
   Scenario: Visitor should see minimum bet price
     Given Visitor is on the Application Home
-    And   Visitor logs in to Application with "11041624582" usename and "DenemeD1@" password
+    And   Visitor logs in to Application with "11041624582" username and "DenemeD1@" password
     And   User goes to Football Bet list
     And   User goes to Filter
     And   User selects 1 th League
@@ -14,7 +14,7 @@ Feature: Match list and minimum bet price
   @match_list
   Scenario: Visitor should see same count
     Given Visitor is on the Application Home
-    And   Visitor logs in to Application with "11041624582" usename and "DenemeD1@" password
+    And   Visitor logs in to Application with "11041624582" username and "DenemeD1@" password
     And   User goes to Football Bet list
     And   User goes to Filter
     When  User selects 1 th League

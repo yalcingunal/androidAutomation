@@ -4,8 +4,6 @@ import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-import java.net.MalformedURLException;
-
 public class BetCheckoutListPage extends PageBase {
 
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/btnPlay")
@@ -14,7 +12,7 @@ public class BetCheckoutListPage extends PageBase {
     @AndroidFindBy(id = "android:id/message")
     private AndroidElement checkoutMessage;
 
-    public BetCheckoutListPage() throws MalformedURLException {
+    public BetCheckoutListPage() {
     }
 
     public void playBet() {
