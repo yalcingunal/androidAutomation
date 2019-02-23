@@ -2,10 +2,14 @@
 # To localy override values, create config.yml file next to this one.
 # You can also override these values by specyfing a system property
 
-Device: "ANDROID" # acceptable values: FIREFOX, CHROME
+# Device: "ANDROID"
 
 # Specify browser window size in format <width>x<height>, example: 800x600
 # use "maximised" value if you want browser to be maximised
 
 #milisecond
-NoSuchElementExceptionInterval: 10000
+#NoSuchElementExceptionInterval: 10000
+
+AppPath: "/Users/yalcingunal/Downloads/nesine.com.apk"
+
+DeviceName: "Redmi Note 4"

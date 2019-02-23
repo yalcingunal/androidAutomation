@@ -38,6 +38,9 @@ public class AppSettings {
     }
 
     @JsonProperty
-    public long NoSuchElementExceptionInterval;
+    public String AppPath;
+
+    @JsonProperty
+    public String DeviceName;
 
 }
