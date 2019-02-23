@@ -1,7 +1,5 @@
 package com.myApp.pages;
 
-import com.myApp.core.driver.DriverFactory;
-import com.myApp.core.driver.MyAndroidDriver;
 import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -20,7 +18,6 @@ public class FootBallLeaguePage extends PageBase {
     private AndroidElement filterOkButton;
 
     public FootBallLeaguePage() throws MalformedURLException {
-        super(DriverFactory.REAL_DRIVER);
     }
 
     public void chooseLeagueByIndex(int value) {

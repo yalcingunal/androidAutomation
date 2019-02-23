@@ -1,6 +1,5 @@
 package com.myApp.pages;
 
-import com.myApp.core.driver.DriverFactory;
 import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -19,7 +18,6 @@ public class LoginPage  extends PageBase {
     private AndroidElement loginButton;
 
     public LoginPage() throws MalformedURLException {
-        super(DriverFactory.REAL_DRIVER);
     }
 
     public void loginWithUsernameAndPassword(String username, String password) {

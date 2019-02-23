@@ -1,4 +1,4 @@
-Feature: match list and minimum bet price
+Feature: Match list and minimum bet price
 
   @minimum_bet
   Scenario: Visitor should see minimum bet price

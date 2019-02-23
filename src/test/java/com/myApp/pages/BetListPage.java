@@ -1,6 +1,5 @@
 package com.myApp.pages;
 
-import com.myApp.core.driver.DriverFactory;
 import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -32,7 +31,6 @@ public class BetListPage extends PageBase {
     public List<String> idList = new ArrayList<>();
 
     public BetListPage() throws MalformedURLException {
-        super(DriverFactory.REAL_DRIVER);
     }
 
     public void openFilter() {
@@ -77,7 +75,6 @@ public class BetListPage extends PageBase {
                 }
             }
         }
-
         return (counter > 1);
     }
 }

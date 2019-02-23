@@ -1,6 +1,5 @@
 package com.myApp.pages;
 
-import com.myApp.core.driver.DriverFactory;
 import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -22,11 +21,10 @@ public class HomePageBase extends PageBase {
     @AndroidFindBy(id = "com.pordiva.nesine.android:id/btn_login")
     private AndroidElement loginButton;
 
-    @AndroidFindBy(id = "com.pordiva.nesine.android:id/n6_tab_kupon_background")
+    @AndroidFindBy(id = "com.pordiva.nesine.android:id/background_view")
     private AndroidElement betCheckoutListButton;
 
     public HomePageBase() throws MalformedURLException {
-        super(DriverFactory.REAL_DRIVER);
     }
 
     public void closeAdvertisement() {

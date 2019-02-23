@@ -21,5 +21,6 @@ public class StepHooks {
         if (scenario.isFailed()) {
             ScreenshotManager.saveFailScenarioScreenshot(androidDriver, scenario);
         }
+        androidDriver.resetApp();
     }
 }

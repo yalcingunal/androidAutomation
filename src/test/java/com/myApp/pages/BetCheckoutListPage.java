@@ -1,6 +1,5 @@
 package com.myApp.pages;
 
-import com.myApp.core.driver.DriverFactory;
 import com.myApp.helpers.PageBase;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -16,7 +15,6 @@ public class BetCheckoutListPage extends PageBase {
     private AndroidElement checkoutMessage;
 
     public BetCheckoutListPage() throws MalformedURLException {
-        super(DriverFactory.REAL_DRIVER);
     }
 
     public void playBet() {

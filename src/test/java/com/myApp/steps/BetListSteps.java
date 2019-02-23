@@ -2,7 +2,6 @@ package com.myApp.steps;
 
 import com.myApp.pages.BetListPage;
 import com.myApp.pages.FootBallLeaguePage;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

@@ -1,5 +1,6 @@
 package com.myApp.helpers;
 
+import com.myApp.core.driver.DriverFactory;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -17,8 +18,8 @@ public abstract class PageBase {
 
     protected AndroidDriver driver;
 
-    protected PageBase(AndroidDriver driver) {
-        this.driver = driver;
+    protected PageBase() {
+        this.driver = DriverFactory.REAL_DRIVER;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
