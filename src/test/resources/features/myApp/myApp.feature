@@ -1,5 +1,6 @@
 Feature: match list and minimum bet price
 
+  @minimum_bet
   Scenario: Visitor should see minimum bet price
     Given Visitor is on the Application Home
     And   Visitor logs in to Application with "11041624582" usename and "DenemeD1@" password
@@ -10,6 +11,7 @@ Feature: match list and minimum bet price
     And   User goes to bet checkout list
     Then  User should see "Kupon bedeliniz en az 3 TL olmalıdır." warning message
 
+  @match_list
   Scenario: Visitor should see same count
     Given Visitor is on the Application Home
     And   Visitor logs in to Application with "11041624582" usename and "DenemeD1@" password
