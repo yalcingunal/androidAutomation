@@ -13,3 +13,5 @@
 AppPath: "/Users/yalcingunal/Downloads/nesine.com.apk"
 
 DeviceName: "Redmi Note 4"
+
+AppiumServerUrl: "http://localhost:4723/wd/hub"

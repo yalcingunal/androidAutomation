@@ -39,4 +39,7 @@ public class AppSettings {
     @JsonProperty
     public String DeviceName;
 
+    @JsonProperty
+    public String AppiumServerUrl;
+
 }

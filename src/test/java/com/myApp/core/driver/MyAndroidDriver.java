@@ -18,7 +18,7 @@ public class MyAndroidDriver {
         caps.setCapability(MobileCapabilityType.APP, AppSettings.Instance.AppPath);
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, AppSettings.Instance.DeviceName);
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-        return new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
+        return new AndroidDriver(new URL(AppSettings.Instance.AppiumServerUrl), caps);
     }
 
 }
